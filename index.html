@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>[Esc] Hacker Escape Rooms – Mobilmeny</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b0b10;
+      color: #f7f7f7;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0.4rem 0;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+    }
+
+    .variants {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 720px) {
+      .variants {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      background: #161623;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      background: #f4b41a;
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
+    }
+
+    .tech {
+      margin-top: 2.5rem;
+    }
+
+    .tech ul {
+      padding-left: 1.2rem;
+    }
+
+    .tech li {
+      margin: 0.2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="intro">
+      <h1>[Esc] Hacker Escape Rooms – Mobilmeny</h1>
+      <p>
+        Det här är min inlämningsuppgift i kursen JavaScript Grund.
+        Jag har byggt en mobilanpassad meny till startsidan för
+        [Esc] Hacker Escape Rooms. Menyn visas bara på små skärmar
+        och öppnas med en hamburgermeny.
+      </p>
+      <p>
+        Jag har gjort två versioner av lösningen: en statisk HTML-version
+        och en version där menyn byggs upp med JavaScript och DOM API.
+        Här nedan kan du välja vilken variant du vill titta på.
+      </p>
+    </section>
+
+    <section class="variants">
+      <article class="card">
+        <h2>Variant A – statisk HTML</h2>
+        <p>
+          I den här versionen ligger menyn direkt i HTML-filen och styrs
+          med CSS för utseende och animationer. JavaScript används bara
+          för att öppna och stänga menyn.
+        </p>
+        <a href="variant-a-static-html/index.html" class="btn">
+          Öppna variant A
+        </a>
+      </article>
+
+      <article class="card">
+        <h2>Variant B – DOM API (JavaScript)</h2>
+        <p>
+          I den här versionen byggs mobilmenyn upp med JavaScript när sidan
+          laddas. Menyn skapas alltså med DOM API i stället för att ligga
+          färdig i HTML-filen.
+        </p>
+        <a href="variant-b-dom-api/index.html" class="btn">
+          Öppna variant B
+        </a>
+      </article>
+    </section>
+
+    <section class="tech">
+      <h2>Teknik jag har använt</h2>
+      <ul>
+        <li>HTML och CSS</li>
+        <li>JavaScript (DOM och eventhantering)</li>
+        <li>Git och GitHub för versionshantering</li>
+        <li>GitHub Pages för publicering</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
