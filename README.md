@@ -1,31 +1,54 @@
-# [Esc] Hacker Escape Rooms
+# [Esc] Hacker Escape Rooms – mobilmeny
 
-Detta är min inlämningsuppgift i kursen **Webbutveckling – HTML & CSS**.  
-Uppgiften gick ut på att skapa en **responsiv startsida** som exakt följer designmallen och styleguiden.
+Detta repository innehåller min inlämningsuppgift där jag bygger en mobilanpassad meny till startsidan för [Esc] Hacker Escape Rooms.
 
-## 🔗 Länkar
+## Struktur
 
-- **Publicerad sida (GitHub Pages):**  
-  [https://imanbatyah.github.io/esc-hacker-escape-rooms/](https://imanbatyah.github.io/esc-hacker-escape-rooms/)
-- **Repository (GitHub):**  
-  [https://github.com/ImanBatyah/esc-hacker-escape-rooms](https://github.com/ImanBatyah/esc-hacker-escape-rooms)
+Jag har löst uppgiften på två olika sätt enligt instruktionen:
 
-## 📄 Beskrivning
-Webbplatsen är byggd med **semantisk HTML5** och **CSS3**.  
-Layouten använder **Flexbox** och **CSS Grid** för att uppnå en responsiv design som fungerar bra på både desktop och mobil.  
-Färger, typsnitt och avstånd följer den tillhandahållna **styleguiden** och designen från Figma.  
-Jag har använt **Google Fonts (Roboto)** samt färgvariabler definierade i `:root` för enkel hantering.
+- `variant-a-static-html/` – statisk HTML-version
+- `variant-b-dom-api/` – JavaScript-version där menyn skapas med DOM API
 
-All kod är strukturerad med tydliga sektioner (`header`, `main`, `footer`) och återanvändbara komponenter för knappar, kort och testimonials.  
-Sidan är publicerad via **GitHub Pages**.
+## Variant A – statisk HTML
 
-## 🧠 Verktyg och tekniker
-- HTML5  
-- CSS3 (Flexbox, Grid, variabler)  
-- Google Fonts  
-- Git & GitHub för versionshantering  
+I `variant-a-static-html` ligger menyn (hamburgerknapp och overlay) direkt i HTML-filen (`index.html`).  
+CSS (`styles.css`) styr layout, färger och animationer.  
+JavaScript-filen `JS/app.js` används enbart till att öppna och stänga den befintliga menyn genom att lägga till och ta bort CSS-klasser.
+
+På stora skärmar visas den vanliga horisontella menyn i headern.  
+På små skärmar (under 720px) döljs den vanliga menyn, och en hamburgerknapp visas uppe till höger.  
+När användaren klickar på knappen öppnas en fullskärmsmeny som täcker hela sidan.  
+Menyn kan stängas genom att klicka på X, klicka utanför panelen eller trycka på Esc.
+
+## Variant B – DOM API (JavaScript)
+
+I `variant-b-dom-api` byggs hela mobilmenyn upp med JavaScript i filen `JS/menu.js`.  
+Själva HTML-filen innehåller endast en plats för knappen (`<div id="menuMount"></div>`), men inga element för mobilmenyn.  
+När sidan laddas skapar JavaScript:
+
+- hamburgerknappen
+- overlay-diven
+- alla länkar i menyn
+- "Book now"-knappen
+
+På samma sätt som i Variant A visas menyn bara på små skärmar.  
+Öppning och stängning fungerar likadant, men all struktur för menyn ligger i JavaScript istället för i HTML.
+
+## Teknik
+
+Båda versionerna använder:
+
+- HTML5 för struktur
+- CSS3 för layout, färger och responsiv design (media queries, flexbox, grid)
+- JavaScript för att hantera öppning och stängning av mobilmenyn
+- Git och GitHub för versionshantering
 - GitHub Pages för publicering
 
----
+## Sammanfattning
 
-© 2025 Iman Batyah
+Denna uppgift visar två olika sätt att bygga en mobilanpassad meny:
+
+- en statisk HTML-lösning
+- en dynamisk lösning med DOM API i JavaScript
+
+Båda följer designen från Figma och uppfyller kraven i uppgiftsbeskrivningen.

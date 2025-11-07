@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Esc] Hacker Escape Rooms</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand__logo" aria-hidden="true">ESC</span>
+        <span class="brand__name">Hacker Escape Rooms</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul class="primary-nav__list">
+          <li><a href="#play-online">Play online</a></li>
+          <li><a href="#play-onsite">Play on-site</a></li>
+          <li><a href="#story">The story</a></li>
+          <li><a class="is-active" href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__panel">
+      <button class="mobile-nav__close" id="mobileNavClose" aria-label="Close navigation">
+        &times;
+      </button>
+      <ul class="mobile-nav__list">
+        <li><a href="#play-online">Play online</a></li>
+        <li><a href="#play-onsite">Play on-site</a></li>
+        <li><a href="#story">The story</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+      <a class="btn btn--primary mobile-nav__cta" href="#contact">Book now</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <img class="hero__img" src="Bilder/hero.jpg" alt="Hacker at multiple computer screens">
+    <div class="container hero__cta">
+      <div class="button-group">
+        <a class="btn btn--primary" href="#play-online">Online challenges</a>
+        <a class="btn btn--secondary" href="#play-onsite">On-site challenges</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials container" aria-label="Testimonials">
+    <article class="quote">
+      <img class="quote__avatar" src="Bilder/testimonial-1.jpg" alt="Customer portrait">
+      <div class="quote__text">
+        <p>This is a quote about how amazing this place is and how much fun me and my friends had when we tried it.</p>
+        <small>John Doe, visited us in September 2021</small>
+      </div>
+    </article>
+    <article class="quote">
+      <img class="quote__avatar" src="Bilder/testimonial-1.jpg" alt="Customer portrait">
+      <div class="quote__text">
+        <p>This is a quote about how amazing this place is and how much fun me and my friends had when we tried it.</p>
+        <small>John Doe, visited us in September 2021</small>
+      </div>
+    </article>
+  </section>
+
+  <section class="container popular" id="play-onsite">
+    <h2 class="section-title">Popular challenges right now</h2>
+
+    <div class="cards">
+      <article class="card">
+        <img class="card__img" src="Bilder/card-1.jpg" alt="On-site room preview 1">
+        <div class="card__body">
+          <div class="card__meta">
+            <h3 class="card__title">Title of room (on-site)</h3>
+            <div class="card__facts">
+              <span class="rating" aria-label="4 stars">★ ★ ★ ★ ☆</span>
+              <span class="participants">2–6 participants</span>
+            </div>
+          </div>
+          <p class="card__excerpt">Praeterea, ex culpa non invenies unum aut non accusatus unum. Et nihil inuitam.</p>
+          <a class="btn btn--primary btn--small" href="#book">Book this room</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="Bilder/card-2.jpg" alt="On-site room preview 2">
+        <div class="card__body">
+          <div class="card__meta">
+            <h3 class="card__title">Title of room (on-site)</h3>
+            <div class="card__facts">
+              <span class="rating" aria-label="4 stars">★ ★ ★ ★ ☆</span>
+              <span class="participants">2–6 participants</span>
+            </div>
+          </div>
+          <p class="card__excerpt">Praeterea, ex culpa non invenies unum aut non accusatus unum. Et nihil inuitam.</p>
+          <a class="btn btn--primary btn--small" href="#book">Book this room</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="Bilder/card-3.jpg" alt="On-site room preview 3">
+        <div class="card__body">
+          <div class="card__meta">
+            <h3 class="card__title">Title of room (on-site)</h3>
+            <div class="card__facts">
+              <span class="rating" aria-label="4 stars">★ ★ ★ ★ ☆</span>
+              <span class="participants">2–6 participants</span>
+            </div>
+          </div>
+          <p class="card__excerpt">Praeterea, ex culpa non invenies unum aut non accusatus unum. Et nihil inuitam.</p>
+          <a class="btn btn--primary btn--small" href="#book">Book this room</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="button-group" style="justify-content:center">
+      <a class="btn btn--primary" href="#play-online">Online challenges</a>
+      <a class="btn btn--secondary" href="#play-onsite">On-site challenges</a>
+    </div>
+  </section>
+
+  <section class="story-cta" id="story">
+    <div class="container">
+      <p class="lead">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+      <a class="btn btn--ghost" href="#full-story">Read the full story</a>
+    </div>
+  </section>
+
+  <section class="split container" id="play-online">
+    <div class="split__media">
+      <img src="Bilder/team-1.jpg" alt="Team working together at computers">
+    </div>
+    <div class="split__text">
+      <h3>Play with your friends or build your team stronger at work</h3>
+      <p>Praeterea, ex culpa non invenies unum aut non accusatus unum. Et nihil inuitam.</p>
+      <a class="btn btn--primary" href="#book-onsite">Book on-site today</a>
+    </div>
+  </section>
+
+  <section class="split container split--reverse">
+    <div class="split__text">
+      <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+      <p>Praeterea, ex culpa non invenies unum aut non accusatus unum. Et nihil inuitam.</p>
+      <a class="btn btn--primary" href="#see-all">See all challenges</a>
+    </div>
+    <div class="split__media">
+      <img src="Bilder/team-2.jpg" alt="Person working at a desk with code on screen">
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__logo" aria-hidden="true">ESC</span>
+          <span class="brand__name">Hacker Escape Rooms</span>
+        </div>
+        <p class="muted">
+          Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.
+        </p>
+      </div>
+
+      <nav aria-label="Site map">
+        <h4 class="footer-title">Site map</h4>
+        <ul class="footer-links">
+          <li><a href="#story">The Story</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#legal">Legal</a></li>
+          <li><a href="#play-online">Play online</a></li>
+          <li><a href="#play-onsite">Play on-site</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4 class="footer-title">Follow us on</h4>
+        <ul class="footer-links">
+          <li><a href="#" rel="noopener">Facebook</a></li>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/app.js" defer></script>
+</body>
+</html>
